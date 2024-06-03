@@ -122,7 +122,7 @@ stages:
           - task: AzureWebApp@1
             displayName: 'Resource Manager - Tailspin - Space Game'
             inputs:
-              azureSubscription: 'Pay-As-You-Go'
+              azureSubscription: 'Resource Manager - Tailspin - Space Game'
               appName: '$(WebAppNameTest)'
               package: '$(Pipeline.Workspace)/drop/$(buildConfiguration)/*.zip'
 - stage: 'Staging'
